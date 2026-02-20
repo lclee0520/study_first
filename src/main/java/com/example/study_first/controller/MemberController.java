@@ -95,7 +95,7 @@ public class MemberController {
     }
 
     //스텟 업데이트
-    @PutMapping("/{id}/update")
+    @PatchMapping("/{id}/update")
     public String updateMember(@PathVariable Long id, @RequestBody MemberRequestDto requestDto){
         memberService.updateMember(id, requestDto);
         return "스텟 수정 완료";

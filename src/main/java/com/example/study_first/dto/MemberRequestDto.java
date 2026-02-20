@@ -7,17 +7,17 @@ import lombok.Setter;
 @Getter @Setter
 public class MemberRequestDto {
     private String nickname;
-    private long attackPower;      // 공격력
-    private double damage;         // 데미지
-    private double damageAmp;      // 최종뎀
-    private double stDamage;       // 스탯 대미지
-    private double attackSpeed;    // 공속
-    private double minVal;         // 최소댐
-    private double maxVal;         // 최대댐
-    private double normalMonDamage; // 일몹뎀
-    private double bossDamage;     // 보공
-    private double critRate;       // 크리 확률
-    private double critDamage;     // 크리 데미지
+    private Long attackPower;      // 공격력
+    private Double damage;         // 데미지
+    private Double damageAmp;      // 최종뎀
+    private Double stDamage;       // 스탯 대미지
+    private Double attackSpeed;    // 공속
+    private Double minVal;         // 최소댐
+    private Double maxVal;         // 최대댐
+    private Double normalMonDamage; // 일몹뎀
+    private Double bossDamage;     // 보공
+    private Double critRate;       // 크리 확률
+    private Double critDamage;     // 크리 데미지
 
 
     public Member toEntity() {

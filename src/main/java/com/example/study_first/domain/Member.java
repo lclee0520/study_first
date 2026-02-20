@@ -66,17 +66,42 @@ public class Member {
         return (long) (calculateFinalDps() * (1 + (bossDamage / 100.0)));
     }
 
-    public void update(MemberRequestDto dto){
-        this.attackPower = dto.getAttackPower();
-        this.damage = dto.getDamage();
-        this.damageAmp = dto.getDamageAmp();
-        this.stDamage = dto.getStDamage();
-        this.attackSpeed = dto.getAttackSpeed();
-        this.minVal = dto.getMinVal();
-        this.maxVal = dto.getMaxVal();
-        this.normalMonDamage = dto.getNormalMonDamage();
-        this.bossDamage = dto.getBossDamage();
-        this.critRate = dto.getCritRate();
-        this.critDamage = dto.getCritDamage();
+    public void update(MemberRequestDto dto) {
+        if (dto.getNickname() != null) {
+            this.nickname = dto.getNickname();
+        }
+        if (dto.getAttackPower() != null) {
+            this.attackPower = dto.getAttackPower();
+        }
+        if (dto.getDamage() != null) {
+            this.damage = dto.getDamage();
+        }
+        if (dto.getDamageAmp() != null) {
+            this.damageAmp = dto.getDamageAmp();
+        }
+        if (dto.getStDamage() != null) {
+            this.stDamage = dto.getStDamage();
+        }
+        if (dto.getAttackSpeed() != null) {
+            this.attackSpeed = dto.getAttackSpeed();
+        }
+        if (dto.getMinVal() != null) {
+            this.minVal = dto.getMinVal();
+        }
+        if (dto.getMaxVal() != null) {
+            this.maxVal = dto.getMaxVal();
+        }
+        if (dto.getNormalMonDamage() != null) {
+            this.normalMonDamage = dto.getNormalMonDamage();
+        }
+        if (dto.getBossDamage() != null) {
+            this.bossDamage = dto.getBossDamage();
+        }
+        if (dto.getCritRate() != null) {
+            this.critRate = dto.getCritRate();
+        }
+        if (dto.getCritDamage() != null) {
+            this.critDamage = dto.getCritDamage();
+        }
     }
 }
